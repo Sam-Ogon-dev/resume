@@ -24,6 +24,7 @@ body, html{
     height: 80px;
     background-color: #e7f3ff;
     transition: 300ms;
+    font-size: 30px;
     z-index: 1;
 }
 
@@ -39,6 +40,7 @@ body, html{
     height: 80px;
     background-color: #f9fbff;
     transition: 300ms;
+    font-size: 25px!important;
 }
 
 .nav {
@@ -53,7 +55,7 @@ body, html{
     margin: 20px;
     text-decoration: none;
     color: #1c1c1c;
-    font-size: 30px;
+    font-size: inherit;
     font-weight: 700;
     font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -147,10 +149,21 @@ body, html{
     backdrop-filter: blur(2px);
 }
 
+.personal_information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.personal_information_block {
+    display: flex;
+    flex-direction: column;
+}
+
 .description {
-    border-radius: 2px;
+    border-radius: 3px;
     padding: 40px;
-    width: 70%;
+    width: 90%;
     height: fit-content;
     background-color: rgba(239, 242, 249, 0.96);
     color: #1c1c1c;
@@ -182,6 +195,30 @@ body, html{
     color: #1c1c1c;
     font-size: 25px;
     font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: rgba(206, 206, 206, 0.89);
+    backdrop-filter: blur(2px);
+}
+
+.screens {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.screen {
+    border-radius: 3px;
+    width: 350px;
+    object-fit: contain;
 }
 
 .contact {
